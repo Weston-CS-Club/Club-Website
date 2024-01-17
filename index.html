@@ -4,6 +4,11 @@
     <head>
         <link href = "main.css" rel = "stylesheet">
         <script src = "main.js" defer></script>
+        
+        <!--Import Statements for packages for the fake terminal-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="assets/jquery.custom-caret-1.1.js"></script>
+        
     </head>
     <body>
         <nav id = "navbar">
@@ -19,7 +24,10 @@
             <h1 id = "N" class = "yn" onmouseover = "enterN(this)" onmouseout = "leave(this)">N]</h1>
         </div>
         <div id = "console">
-            <h1 id = "current-line">User@WestonCS$_</h1>
+            <h1 id = "current-line">User@WestonCS$
+                <div id="term-line" contenteditable="true"></div>
+            </h1>
+            
         </div>
     </body>
 </html>

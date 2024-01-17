@@ -76,5 +76,26 @@ body{
 #console{
     color: var(--text);
     margin-left: 40px;
+    
+}
+#current-line {
+    caret-color: #1C1C22;
+    display: inline-block;
+    max-height: 1.5em;
 }
 
+/* The properties for terminal input box */
+#term-line {
+    outline: none;
+    caret-color: #1C1C22;
+    display: inline-block;
+    max-height: 1.5em;
+    white-space:nowrap;
+}
+#term-line  br {
+    display:none;
+}
+#caret {
+    border-right:0.5em solid var(--text);
+    margin-right:-0.5em;
+}
